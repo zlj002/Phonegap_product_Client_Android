@@ -1,0 +1,35 @@
+﻿<header>
+    <div style=" width:20%;" class="headerReturnBtn">
+        <a onclick="javascript:$.ui.goBack();" class="button btnReturnCommon">
+            &nbsp;&nbsp;&nbsp;
+        </a>
+    </div>
+    <div style=" width:60%;" class="headerFont">
+        短信验证
+    </div>
+    <div style="width:20%;" class="headerRight">
+    </div>
+</header>
+<div class="panelAll">
+    <div class="bgImageBottom">
+         
+        <div class="panelContent">
+            <div class="vInputBG">
+                <input type="text" id="txtMobileCode" class="search messageCode" placeholder="请输入短信验证码" />
+                <button class="button btnResendMessage"   id="btnResendMessage">重发</button>
+            </div>
+
+            <a class="button btnBlue" id="btnToSetPassword" style="width: 70%; ">下一步</a>
+        </div>
+    </div>
+    <div class="panelBottom">
+        <div class="oldUserText">
+            我是老用户，请点击
+        </div>
+        <div style="float: left; text-align: center;">
+            <a class="button panelBottomBtn" href="#login" style=" width: 100%;">老用户登录</a>
+        </div>
+    </div>
+</div>
+
+<script src="js/pageMobileCode.js"></script>

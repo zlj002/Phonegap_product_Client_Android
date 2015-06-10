@@ -1,0 +1,1 @@
+var pAbout={initialize:function(){this.initEvents()},initEvents:function(){}};

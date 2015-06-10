@@ -1,0 +1,104 @@
+﻿<header>
+    <div style=" width:20%;" class="headerReturnBtn">
+        <a onclick="javascript:$.ui.goBack();" class="button btnReturnCommon">
+            &nbsp;&nbsp;&nbsp;
+        </a>
+    </div>
+    <div style=" width:60%;" class="headerFont">
+        编辑资料
+    </div>
+    <div style="width:20%;" class="headerRight">
+        <a  id="btnSaveUserInfo" class="button" style="color: white; font-size: 18px; padding-top: 0px; ">
+            保存
+        </a>
+    </div>
+</header>
+<div class="panelAll" style="background-color:#fff">
+    <div class="bgImageBottom">
+        <div class="panelContent">
+            <div class="divHeader">
+                <img src="img/defaultheader.png" id="imgHeader_MyInfo_Edit" class="imgHeader" />
+            </div>
+            <ul class="list" style="margin-top: 10px; " class="ulUserInfoEdit">
+                <li class="liUserInfoEdit"><div class="leftInfo">昵称</div><div class="rightInfo" id="divNickName_MyInfo_Edit"><input id="txtNickName_MyInfo" type="text" class="inputUserInfoEdit" /></div></li>
+                <li class="liUserInfoEdit"><div class="leftInfo">真实姓名</div><div class="rightInfo" id="divName_MyInfo_Edit"><input id="txtName_MyInfo_Edit" type="text" class="inputUserInfoEdit" /> </div></li>
+                <li class="liUserInfoEdit">
+                    <div class="leftInfo">性别</div><div class="rightInfo" id="divSex_MyInfo_Edit">
+                        <select class="inputUserInfoEdit" id="sel_Sex_MyInfo_Edit">
+                            <option value="男">男</option>
+                            <option value="女">女</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="liUserInfoEdit">
+                    <div class="leftInfo">出生日期</div><div class="rightInfo">
+                        <input type="date" id="txtBrithday_Edit" class="inputUserInfoEdit" />
+                    </div>
+                </li>
+                <li class="liUserInfoEdit">
+                    <div class="leftInfo">家乡</div><div class="rightInfo">
+                        <select id="s_province" name="s_province" style="float:left;width:48%;" class="inputUserInfoEdit"></select>
+                        <select id="s_city" name="s_city" style="float:right;width:48%;" class="inputUserInfoEdit"></select>
+                        <select id="s_county" name="s_county" style="display:none;"></select>
+                    </div>
+                </li>
+            </ul>
+            <ul class="list" style="margin-top:20px;">
+                <li class="liUserInfoEdit">
+                    <div class="leftInfo">近期动向</div><div class="rightInfo">
+                        <input id="txtRecentActivities_MyInfo_Edit" type="text" class="inputUserInfoEdit" />
+                    </div>
+                </li>
+                <li class="liUserInfoEdit">
+                    <div class="leftInfo">我喜欢</div><div class="rightInfo">
+                        <input id="txtILike_MyInfo_Edit" type="text" class="inputUserInfoEdit" />
+                    </div>
+                </li>
+                <li class="liUserInfoEdit">
+                    <div class="leftInfo">个性签名</div><div class="rightInfo">
+                        <input id="txtPersonalSign_MyInfo_Edit" type="text" class="inputUserInfoEdit" />
+                    </div>
+                </li>
+            </ul>
+            <ul class="list" style="margin-top:20px;" usertype="student">
+                <li class="liUserInfoEdit">
+                    <div class="leftInfo">学历</div><div class="rightInfo">
+                        <select class="inputUserInfoEdit" id="sel_Eduaction_UserInfo_Edit" class="inputUserInfoEdit">
+                            <option value="专科">专科</option>
+                            <option value="本科">本科</option>
+                            <option value="研究生">研究生</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="liUserInfoEdit">
+                    <div class="leftInfo">专业</div><div class="rightInfo">
+                        <select id="selSpecialty_MyInfo_Edit" class="inputUserInfoEdit"></select>
+                    </div>
+                </li>
+                <li class="liUserInfoEdit">
+                    <div class="leftInfo">入学年份</div><div class="rightInfo">
+                        <select id="selStartYears_MyInfo_Edit" class="inputUserInfoEdit"></select>
+                    </div>
+                </li>
+                <li class="liUserInfoEdit">
+                    <div class="leftInfo">班级<input type="hidden" id="txtClassID_MyInfo_Edit" /></div><div class="rightInfo" id="divClassName_MyInfo_Edit">
+
+                    </div>
+                </li>
+                <li class="liUserInfoEdit">
+                    <div class="leftInfo">宿舍</div><div class="rightInfo" id="divDormitory_MyInfo">
+
+                        <input type="text" id="txtDormitory_MyInfo_Edit" />
+                    </div>
+                </li>
+            </ul>
+            <ul class="list" style="margin-top:20px;" usertype="teacher">
+                <li class="liUserInfoEdit"><div class="leftInfo">部门</div><div class="rightInfo" id="divDepartment_MyInfo_Edit"></div></li>
+            </ul>
+            <ul class="list" style="margin-top:20px;">
+                <li class="liUserInfoEdit"><div class="leftInfo">学校</div><div class="rightInfo" id="divSchoolName_MyInfo_Edit"></div></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="js/pageEditUserInfo.js"></script>

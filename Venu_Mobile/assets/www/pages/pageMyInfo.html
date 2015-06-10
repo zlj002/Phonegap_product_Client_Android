@@ -1,0 +1,69 @@
+﻿<header>
+    <div style=" width:20%;" class="headerReturnBtn">
+        &nbsp;
+    </div>
+    <div style=" width:60%;" class="headerFont">
+        个人资料
+    </div>
+    <div style="width:20%;" class="headerRight">
+        <a id="btnToEditUserInfo" class="button" style="color: white; font-size: 18px; padding-top: 0px;">
+            编辑
+        </a>
+    </div>
+</header>
+<div class="panelAll" style="background-color:#fff">
+    <div class="bgImageBottom">
+        <div class="panelContent">
+            <div class="divHeader">
+                <img src="img/defaultheader.png" id="imgHeader_MyInfo" class="imgHeader" />
+            </div>
+            <ul class="list" style="margin-top: 10px; ">
+                <li><div class="leftInfo">昵称</div><div class="rightInfo" id="divNickName_MyInfo"></div></li>
+                <li><div class="leftInfo">真实姓名</div><div class="rightInfo" id="divName_MyInfo"> </div></li>
+                <li><div class="leftInfo">性别</div><div class="rightInfo" id="divSex_MyInfo"> </div></li>
+                <li><div class="leftInfo">出生日期</div><div class="rightInfo" id="divBrithday_MyInfo"></div></li>
+                <li><div class="leftInfo">家乡</div><div class="rightInfo" id="divNativePlace_MyInfo"></div></li>
+            </ul>
+
+            <ul class="list" style="margin-top:20px;">
+                <li><div class="leftInfo">近期动向</div><div class="rightInfo" id="divRecentActivities_MyInfo"> </div></li>
+                <li><div class="leftInfo">我喜欢</div><div class="rightInfo" id="divILike_MyInfo"> </div></li>
+                <li><div class="leftInfo">个性签名</div><div class="rightInfo" id="divPersonalSign_MyInfo"> </div></li>
+            </ul>
+            <ul class="list" style="margin-top:20px;" usertype="student">
+                <li><div class="leftInfo">学历</div><div class="rightInfo" id="divEducation_MyInfo"> </div></li>
+                <li><div class="leftInfo">专业</div><div class="rightInfo" id="divSpecialtyName_MyInfo"> </div></li>
+                <li><div class="leftInfo">入学年份</div><div class="rightInfo" id="divStartYear_MyInfo"> </div></li>
+                <li><div class="leftInfo">班级</div><div class="rightInfo" id="divClassName_MyInfo"> </div></li>
+                <li><div class="leftInfo">宿舍</div><div class="rightInfo" id="divDormitory_MyInfo"> </div></li>
+            </ul>
+            <ul class="list" style="margin-top:20px;" usertype="teacher">
+                <li><div class="leftInfo">部门</div><div class="rightInfo" id="divDepartment_MyInfo"></div></li>
+            </ul>
+            <ul class="list" style="margin-top:20px;">
+                <li><div class="leftInfo">学校</div><div class="rightInfo" id="divSchoolName_MyInfo"></div></li>
+            </ul>
+            <ul class="list" style="margin-top:20px;">
+                <li style="height:50px;">
+                    <div class="leftInfo">二维码</div><div class="rightInfo" style="background: url('img/bcode.jpg') no-repeat center !important;">
+                        <a href="#barcode" style="display: block; height: 30px; width: 100%; text-decoration: none; ">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </a>
+                    </div>
+                </li>
+                <li style="height:50px;">
+                    <div class="leftInfo">系统设置</div><div class="rightInfo" style="text-align:right;">
+                        <a href="#pageSetting" style="display:block;height:50px;text-decoration:none;">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <div style="margin:0px 5px;">
+                <a class="button panelBottomBtn" style="width:95%; color:red !important;" id="btnLogout">注&nbsp;&nbsp;销</a>
+            </div>
+             
+        </div>
+    </div>
+</div>
+<script src="js/pageMyInfo.js"></script>

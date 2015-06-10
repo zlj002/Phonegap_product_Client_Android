@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!--app framework-->
+    <link href="plugins/appframework-2.1.0/build/css/af.ui.base.min.css" rel="stylesheet" />
+    <link href="plugins/appframework-2.1.0/build/css/icons.min.css" rel="stylesheet" />
+    <link href="plugins/appframework-2.1.0/css/ios7.css" rel="stylesheet" />
+
+    <!--滑动样式-->
+    <link href="plugins/Swipe-master/style.css" rel="stylesheet" />
+    <!--本页样式-->
+    <!--<link href="css/index.css" rel="stylesheet" />-->
+    <link rel="stylesheet" id="cssMain" href="css/index.css" />
+
+</head>
+<body id="bodyMain" style="padding:0px;" >
+    <div id="afui" style="background-color: #f0efed;padding-bottom:0px;">
+        <!--公共头部开始-->
+        <div id="header"></div>
+        <!--公共头部结束-->
+        <!--内部头部开始-->
+        <!--内部头部结束-->
+        <!--内容开始-->
+        <div id="content" style="padding-bottom:0px;">
+            <!--主界面开始-->
+            <div class='panel' id='pagemain' data-defer="pages/pagemain.html" data-tab="bootMain" data-load="pmain.initialize" style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px;">
+            </div>
+            <!--主界面结束-->
+            <!--游客界面开始-->
+            <div class='panel' id='notLogin' data-header="none" data-footer="none" data-defer="pages/pageNotLogin.html" data-load="pageNotLogin.initialize" style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px;" scrolling="no">
+
+            </div>
+            <!--游客界面结束-->
+            <!--注册界面开始-->
+            <div class='panel' id='RegisterUser' data-header="none" data-footer="none" data-defer="pages/pageRegisterUser.html" data-load="pRegisterUser.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;">
+            </div>
+            <!--注册界面结束-->
+            <!-- 登录窗口开始 -->
+            <div class="panel" id="login" data-defer="pages/login.html" data-header="none" data-footer="none" data-load="login.initialize" style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px;" scrolling="no">
+
+            </div>
+            <!-- 登录窗口结束 -->
+            <!--选择学校界面-->
+            <div class='panel' id='pageSelectSchool' data-defer="pages/pageSelectSchool.html" data-load="pSelectSchool.initialize" style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px;" data-footer="none">
+
+            </div>
+            <!--选择学校界面-->
+            <!--选择院系界面-->
+            <div class='panel' id='pageSelectFaculty' data-defer="pages/pageSelectFaculty.html" data-load="pSelectFaculty.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;" data-footer="none">
+            </div>
+            <!--选择院系界面-->
+            <!--选择班级界面-->
+            <div class='panel' id='pageSelectClass' data-defer="pages/pageSelectClass.html" data-load="pSelectClass.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;" data-footer="none">
+            </div>
+            <!--选择班级界面-->
+            <!--输入手机号-->
+            <div class='panel' id='pageRegisterMobile' data-defer="pages/pageRegisterMobile.html" data-load="pRegisterMobile.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;" data-footer="none">
+            </div>
+            <!--输入手机号-->
+            <!--输入短信验证码-->
+            <div class='panel' id='pageMobileCode' data-defer="pages/pageMobileCode.html" data-load="pMobileCode.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;" data-footer="none">
+            </div>
+            <!--输入短信验证码-->
+            <!--输入密码-->
+            <div class='panel' id='pageSetPassword' data-defer="pages/pageSetPassword.html" data-load="pSetPassword.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;" data-footer="none">
+            </div>
+
+            <!--输入密码-->
+            <!--修改手机号-->
+            <div class='panel' id='pageChangePhone' data-defer="pages/pageChangePhone.html" data-load="pChangePhone.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;" data-footer="none">
+            </div>
+            <!--修改手机号-->
+            <!--修改手机号-->
+            <div class='panel' id='pageChangePhoneNewPhone' data-defer="pages/pageChangePhoneNewPhone.html" data-load="pChangePhoneNewPhone.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;" data-footer="none">
+            </div>
+            <!--修改手机号-->
+            
+            <!--隐私声明-->
+            <div class='panel' id='privacyStatement' data-defer="pages/pagePrivacyStatement.html" data-load="pPrivacyStatement.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;" data-footer="none">  </div>
+            <!--隐私声明-->
+            <!--用户资料界面开始-->
+            <div class='panel' id='myInfo' data-defer="pages/pageMyInfo.html" data-load="pMyInfo.initialize" data-tab="bootMyInfo" style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px;"></div>
+            <!--用户资料界面结束-->
+            <!--编辑用户资料界面开始-->
+            <div class='panel' id='editUserInfo' data-defer="pages/pageEditUserInfo.html" data-load="pEditUserInfo.initialize" data-tab="bootMyInfo" style="padding-bottom: 0px;   padding-left: 0px; padding-right: 0px;" data-footer="none"></div>
+            <!--编辑用户资料界面结束-->
+            <!--二维码开始-->
+            <div class='panel' id='barcode' data-defer="pages/pageBarcode.html" data-load="pBarcode.initialize" style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px;overflow:hidden;" data-footer="none">  </div>
+            <!--二维码结束-->
+            <!--发现开始-->
+            <div class='panel' id='discover' data-defer="pages/pageDiscover.html" data-tab="bootDiscover" data-load="pDiscover.initialize" style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px;overflow:hidden;">
+            </div>
+
+            <!--发现结束-->
+            <!--系统设置-->
+            <div class='panel' id='pageSetting' data-defer="pages/pageSetting.html" data-load="pSetting.initialize" style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px;overflow:hidden;" data-footer="none">
+            </div>
+            <!--系统设置-->
+            <!--关于我们-->
+            <div class='panel' id='pageAbout' data-defer="pages/pageAbout.html" data-load="pAbout.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;" data-footer="none">
+            </div>
+            <!--关于我们-->
+            <!--帐号安全-->
+            <div class='panel' id='pageSafe' data-defer="pages/pageSafe.html" data-load="pSafe.initialize" style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px;overflow:hidden;" data-footer="none">
+            </div>
+            <!--帐号安全-->
+            <!--重置密码验证码-->
+            <div class='panel' id='pageResetPasswordValidateCode' data-defer="pages/pageResetPasswordValidateCode.html" data-load="pResetPasswordValidateCode.initialize" data-footer="none" style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px;overflow:hidden;">
+            </div>
+            <!--重置密码验证码-->
+            <!--重置密码-->
+            <div class='panel' id='pageResetPassword' data-defer="pages/pageResetPassword.html" data-load="pResetPassword.initialize" data-footer="none" style="padding-bottom: 0px; padding-left: 0px; padding-right: 0px;overflow:hidden;">
+            </div>
+            <!--重置密码-->
+            <!--忘记密码-->
+            <div class='panel' id='ForgetPWDMobile' data-defer="pages/pageForgetPWDMobile.html" data-load="pForgetPWDMobile.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;" data-footer="none">
+            </div>
+            <!--忘记密码-->
+            <!--忘记密码输入短信验证码-->
+            <div class='panel' id='pageForgetPWDMobileCode' data-defer="pages/pageForgetPWDMobileCode.html" data-load="pForgetPWDMobileCode.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;" data-footer="none">
+            </div>
+            <!--忘记密码输入短信验证码-->
+            <!--忘记密码重置密码-->
+            <div class='panel' id='pageForgetPWDResetPassword' data-defer="pages/pageForgetPWDResetPassword.html" data-load="pForgetPWDResetPassword.initialize" style="padding-bottom: 0px; overflow-y: hidden; padding-left: 0px; padding-right: 0px;" data-footer="none">
+            </div>
+            <!--忘记密码重置密码-->
+        </div>
+        <!--内容结束-->
+        <!--公共底部开始-->
+        <div id="navbar">
+            <a class="icon home_ab" id="bootMain" href="#pagemain">主页<div class="redBadgeBottom" id="bottomRedPageMain"></div></a>
+            <a class="icon search" id="bootDiscover" href="#discover">发现<div class="redBadgeBottom" id="bottomRedPageDiscover"></div></a>
+            <a class="icon user" id="bootMyInfo" href="#myInfo">我的<div class="redBadgeBottom" id="bottomRedPageMyInfo"></div></a>
+        </div>
+        <!--公共头部结束-->
+    </div>
+    <!--使用jquery 开发app framework UI 注意引用顺序--> 
+    <script src="plugins/jquery/jquery-2.1.1.min.js"></script>
+    <script src="plugins/appframework-2.1.0/build/jq.appframework.min.js"></script>
+    <script src="plugins/appframework-2.1.0/build/ui/appframework.ui.js"></script> 
+    <!--cordova-->
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <!--cordova 扩展-->
+    <script src="js/cordovaNotify.js"></script>
+    <script src="js/barcodescanner.js"></script>
+    <script src="js/cordovaRemotePush.js"></script>
+    <script src="js/cordovaXG.js"></script>
+    <script src="js/xgPush.js"></script>
+    <!--json2-->
+    <script src="plugins/jquery/json2.js"></script>
+    <!--url 参数-->
+    <script src="js/urlHelper.js"></script>
+    <!--html5 本地存储-->
+    <script src="js/localMobelInfo.js"></script>
+    <!--用户验证-->
+    <script src="js/localMobelAuthentication.js"></script>
+    <!--时间插件-->
+    <script src="js/DateTimeTools.js"></script>
+    <!--fastclick-->
+    <script src="js/fastclick.min.js"></script>
+    <!--滑动js-->
+    <script src="plugins/Swipe-master/swipe.js"></script>
+    <script src="js/area.js"></script>
+    <!--本页js-->
+    <script src="js/index.js"></script>
+    
+    <!--内页js-->
+    <script src="js/installAppList.js"></script>
+
+    <!--动态页面js需要预先加载放到index界面-->
+
+    <script src="js/pageNotLogin.js"></script> 
+</body>
+</html>

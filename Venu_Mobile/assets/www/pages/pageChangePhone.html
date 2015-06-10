@@ -1,0 +1,28 @@
+﻿<header>
+    <div style=" width:20%;" class="headerReturnBtn">
+        <a onclick="javascript:$.ui.goBack();" class="button btnReturnCommon">
+            &nbsp;&nbsp;&nbsp;
+        </a>
+    </div>
+    <div style=" width:60%;" class="headerFont">
+        修改手机号
+    </div>
+    <div style="width:20%;" class="headerRight">
+
+    </div>
+</header>
+<div class="panelAll">
+    <div class="bgImageBottom">
+        <div class="panelContent">
+            <div class="vInputBG">
+                <input type="text" class="search textPhoneAllWidth" readonly="readonly" id="txtOldPhoneNum"/>
+            </div>
+            <div class="vInputBG">
+                <input type="text" class="search messageCode" placeholder="请输入原手机上的短信验证码" id="txtOldPhoneMessageCode_ChangePhone"/>
+                <button class="button btnResendMessage" id="btnResendMessage_ChangePhone">发送验证码</button>
+            </div>
+            <a class="button btnBlue" id="btnChangePhoneStep1" style="width: 70%; ">下一步</a>
+        </div>
+    </div>
+</div>
+<script src="js/pageChangePhone.js"></script>

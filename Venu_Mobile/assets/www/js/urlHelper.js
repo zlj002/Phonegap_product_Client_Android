@@ -1,0 +1,1 @@
+var urlHelper={getQueryString:function(r){var e="";var i=window.document.URL;if(i.indexOf("?")>0){var t=i.split("?");var a=t[1].split("&");for(var n=0;n<a.length;n++){var v=a[n].split("=");if(v[0]==r&&v[1]!=""){e=v[1];break}}}return e}};

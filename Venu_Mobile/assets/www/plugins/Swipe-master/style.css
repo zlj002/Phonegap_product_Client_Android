@@ -1,0 +1,78 @@
+a {
+    /*margin: 0 0 0 10px;*/
+    font-size: 12px;
+    color: #3c3c3c;
+}
+
+#mySwipe div {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 0px;
+    border-radius: 0px;
+    border: 0px solid;
+    border-color: transparent;
+}
+
+#tSwipe div {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px 0px;
+    border-radius: 0px;
+    border: 0px solid;
+    border-color: transparent;
+}
+
+/* Swipe 2 required styles */
+
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+
+.swipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+    .swipe-wrap > div {
+        float: left;
+        width: 100%;
+        position: relative;
+        text-decoration: none;
+    }
+
+        .swipe-wrap > div  a {
+            text-decoration: none;
+        }
+
+.tswipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+}
+
+.tswipe-wrap {
+    overflow: hidden;
+    position: relative;
+}
+
+    .tswipe-wrap > div {
+        float: left;
+        width: 100%;
+        position: relative;
+    }
+
+        .tswipe-wrap > div  a {
+            text-decoration: none;
+        }
+
+/* END required styles */

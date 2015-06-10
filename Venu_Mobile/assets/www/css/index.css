@@ -1,0 +1,757 @@
+﻿/*总体布局样式开始请勿修改*/
+#afui .grid {
+    width: 100%;
+    overflow: hidden; /* hack to take up height*/
+}
+
+#afui .col2,
+#afui .col3,
+#afui .col4,
+#afui .col5,
+#afui .col1-3,
+#afui .col2-3 {
+    float: none;
+    width: 100%;
+}
+
+#afui .grid:after {
+    content: '';
+    clear: both;
+}
+
+@media handheld, only screen and (min-width: 320px) {
+    #afui .col1 {
+        width: 100%;
+        float: left;
+        margin-top: 1px;
+    }
+
+    #afui .col2 {
+        width: 50%;
+        float: left;
+    }
+
+    #afui .col3 {
+        width: 33.3%;
+        float: left;
+        margin-top: 10px;
+    }
+
+    #afui .col1-3 {
+        width: 33.3%;
+        float: left;
+    }
+
+    #afui .col2-3 {
+        width: 66.6%;
+        float: left;
+    }
+
+    #afui .col4 {
+        width: 25%;
+        float: left;
+        margin-top: 3px;
+    }
+
+    #afui .col27 {
+        width: 27%;
+        float: left;
+        margin-top: 20px;
+    }
+
+    #afui .col5 {
+        width: 20%;
+        float: left;
+        margin-top: 10px;
+    }
+}
+
+#afui {
+    padding-bottom: 0px;
+}
+
+    #afui .header {
+        background-color: #0bb0a2 !important;
+        border-bottom: 0px solid #1bcba5 !important;
+        height: 50px;
+        padding-top: 8px;
+        color: #fff !important;
+        overflow: visible;
+    }
+
+    #afui .footer {
+        background: #efefef !important;
+        border-top: 0px solid #efefef !important;
+        padding: 0px;
+    }
+
+    #afui footer > a.pressed:not(.button) {
+        border-radius: 0;
+        background: #0BB0A2 !important;
+        color: #fff !important;
+    }
+
+    #afui footer > a:not(.button) {
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        color: #5a5a5a !important;
+    }
+
+    #afui .list > li > a:after {
+        right: 20px;
+    }
+
+    #afui #backButton::before {
+        content: "";
+    }
+
+    #afui #backButton {
+        left: 0px !important;
+        /*background: url(../img/arrow_left.png) no-repeat !important;*/
+        background-position: 5px !important;
+        color: #fff !important;
+        top: 10px !important;
+    }
+
+/*总体布局样式结束请勿修改*/
+
+
+
+/********************************************************************
+ 以下样式可以自定义，根据您的主题可以修改
+*********************************************************************/
+/*placeholder 字体颜色*/
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #8cb8c4 !important;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #8cb8c4 !important;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #8cb8c4 !important;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #8cb8c4 !important;
+}
+/*底部图标*/
+.icon.home_ab:before {
+    content: url(../img/home_a.png);
+}
+
+.icon.home_ab.pressed:before {
+    content: url(../img/home_b.png);
+}
+
+.icon.message:before {
+    content: url(../img/message_a.png);
+}
+
+.icon.message.pressed:before {
+    content: url(../img/message_b.png);
+}
+
+.icon.contacts:before {
+    content: url(../img/list_a.png);
+}
+
+.icon.contacts.pressed:before {
+    content: url(../img/list_b.png);
+}
+
+.icon.search:before {
+    content: url(../img/search_a.png);
+}
+
+.icon.search.pressed:before {
+    content: url(../img/search_b.png);
+}
+
+.icon.user:before {
+    content: url(../img/user_a.png);
+}
+
+.icon.user.pressed:before {
+    content: url(../img/user_b.png);
+}
+
+
+/*主页面应用的滑动*/
+#position {
+    font-size: x-large !important;
+    bottom: 0px !important;
+    position: absolute !important;
+    left: 50% !important;
+}
+
+    #position em {
+        color: #fff !important;
+    }
+
+        #position em.on {
+            display: inline-block;
+            padding: 0 3px;
+            font-style: normal;
+            text-shadow: 0 -1px 0 rgba(0,0,0, 1);
+            font-family: sans-serif;
+            color: #AFAEAE !important;
+        }
+/*主页面上面新闻的滑动*/
+#positionTop {
+    font-size: x-large !important;
+    bottom: 0px !important;
+    position: absolute !important;
+    left: 50% !important;
+}
+
+    #positionTop em {
+        color: #fff !important;
+    }
+
+        #positionTop em.on {
+            display: inline-block;
+            padding: 0 3px;
+            font-style: normal;
+            text-shadow: 0 -1px 0 rgba(0,0,0, 1);
+            font-family: sans-serif;
+            color: #AFAEAE !important;
+        }
+/*游客界面应用的滑动*/
+#notLoginPosition em.on {
+    color: #0bb0a2 !important;
+}
+
+#notLoginPosition em {
+    display: inline-block;
+    padding: 0 3px;
+    font-style: normal;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.35);
+    font-family: sans-serif;
+}
+/*应用图标对应的文字*/
+.featureFont {
+    color: #313030;
+    font-size: 14px;
+}
+/*游客界面登录按钮*/
+.btnLogin {
+    background-color: transparent !important;
+    color: #000 !important;
+    border: 1px solid #b9b6b6 !important;
+    border-radius: 90px !important;
+    width: 60% !important;
+    font-size: 14px !important;
+}
+/*登录界面我是游客按钮*/
+.btnToNotLogin {
+    width: 95% !important;
+    border: 0px !important;
+    background-color: transparent !important;
+    color: #a09e9e !important;
+    font-size: 14px !important;
+}
+/*显示badge*/
+.redBadge46 {
+    background-color: red !important;
+    top: -95px !important;
+    position: relative !important;
+    left: 68% !important;
+    width: 18px !important;
+    height: 18px !important;
+    color: white !important;
+    font-size: 15px !important;
+    -moz-border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    border-radius: 10px !important;
+    visibility: hidden;
+}
+
+/*底部样式*/
+.redBadgeBottom {
+    top: -65px;
+    position: relative;
+    left: 65%;
+    width: 10px !important;
+    height: 10px !important;
+    color: white !important;
+    background-color: red !important;
+    -moz-border-radius: 10px !important;
+    -webkit-border-radius: 10px !important;
+    border-radius: 10px !important;
+    visibility: hidden;
+}
+
+
+
+/*选择列表样式，学校列表，院系列表,文字描述 热门xxx 以下是搜索结果*/
+.liSelectHeader {
+    text-align: left;
+    color: #b57301;
+    height: 20px;
+    font-size: 14px;
+}
+/*学校列表，院系列表搜索结果*/
+.liSelect {
+    text-align: left;
+    height: 55px !important;
+}
+/*加载更多*/
+.liMore {
+    text-align: center;
+    height: 28px;
+    color: #b57301;
+    border-bottom: 0px !important;
+}
+/*学校名称*/
+.schoolName {
+    font-family: '华文行楷';
+    /*float: left;*/
+    color: #fff;
+    font-size: 24px;
+    margin-left: 5px;
+    padding-top: 10px;
+}
+/*英文学校名称*/
+.englishSchoolName {
+    font-family: Arial;
+    font-size: 13px;
+}
+/*主界面新闻轮播标题*/
+.swipeTitle {
+    position: relative;
+    top: -60px;
+    height: 60px;
+    padding-top: 5px;
+    text-align: left;
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+    background-color: #000;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #fff;
+}
+/*主界面新闻轮播标题文字*/
+.swipeTitleFont {
+    position: relative;
+    top: -115px;
+    height: 16px;
+    padding-top: 0px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #FFF;
+}
+/*头部文字说明*/
+.headerFont {
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 18px;
+    vertical-align: middle;
+    line-height: 30px;
+}
+/*下一步或者确定按钮样式*/
+.btnBlue {
+    background-color: #c6f5e8 !important;
+    color: #000 !important;
+    border: 1px solid #1bcba5 !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+}
+/*所有内容居中*/
+.bgImageBottom {
+    margin: 0px;
+    height: 100%;
+    text-align: center;
+}
+/*内容背景颜色，以及背景图片*/
+.panel {
+    background: url('../img/bgbuilding.png') no-repeat right bottom !important;
+    background-color: #fff !important;
+}
+/*游客界面，登录界面头部背景色*/
+.header87 {
+    width: 100%;
+    height: 87px;
+    margin-top: 0px;
+    background-color: #0bb0a2;
+}
+/*移动校园logo*/
+.venusoftLogo {
+    background: url(../img/venulog.png) no-repeat center;
+    height: 100%;
+}
+/*主界面logo高度*/
+.pageMainVenuSoftLogo {
+    height: 33px;
+}
+/*登录界面用户名和密码的外框*/
+.loginNameAndPWD {
+    width: 99%;
+    border-bottom: 1px solid #cdd4d3;
+    margin-right: 2px;
+    height: 60px;
+    text-align: left;
+}
+/*登录框*/
+.txtLoginName {
+    margin-top: 15px !important;
+    height: 40px !important;
+    margin-left: 27px !important;
+    width: 90% !important;
+    background-color: #fff !important;
+    color: #8cb8c4 !important;
+    border: 0px !important;
+    background: #FFFFFF url('../img/username.png') 0px 8px no-repeat !important;
+    padding-left: 38px !important;
+    margin-bottom: 0px !important;
+    font-size: 14px !important;
+}
+/*密码框*/
+.txtPWD {
+    margin-top: 15px !important;
+    height: 40px !important;
+    margin-left: 27px !important;
+    width: 90% !important;
+    background-color: #fff !important;
+    color: #8cb8c4 !important;
+    margin-top: 5px !important;
+    border: 0px !important;
+    background: #FFFFFF url('../img/password.png') 0px 8px no-repeat !important;
+    padding-left: 38px !important;
+    margin-bottom: 0px !important;
+    font-size: 14px !important;
+}
+
+.headerReturn {
+    width: 100%;
+    height: 50px;
+    margin-top: 0px;
+    background-color: #0bb0a2;
+    padding-top: 20px;
+    color: #fff;
+}
+/*头部右侧*/
+.headerRight {
+    float: left;
+    text-align: left;
+    padding-left: 8px;
+}
+/*头部左侧返回框容器*/
+.headerReturnBtn {
+    float: left;
+    text-align: left;
+    padding-left: 8px;
+}
+/*界面最外层*/
+.panelAll {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+}
+/*界面内容*/
+.panelContent {
+    padding-top: 0px;
+    height: 100%;
+    text-align: center;
+}
+
+/*界面底部绝对定位*/
+.panelBottom {
+    position: absolute !important;
+    bottom: 10px !important;
+    left: auto !important;
+    width: 100% !important;
+}
+/*界面底部按钮样式，以及文字颜色*/
+.panelBottomBtn {
+    background-color: transparent !important;
+    color: #0bb0a2 !important;
+    border: 1px solid #b9b6b6 !important;
+    border-radius: 90px !important;
+    filter: alpha(opacity=80) !important;
+    -moz-opacity: 0.8 !important;
+    -khtml-opacity: 0.8 !important;
+    opacity: 0.8 !important;
+    font-size: 14px !important;
+}
+/*底部我是老用户的文字样式*/
+.oldUserText {
+    float: left;
+    text-align: right;
+    padding-top: 15px;
+    width: 50%;
+}
+
+
+/*我的信息描述*/
+.vMiaoshu {
+    width: 30%;
+    float: left;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+/*我的信息中间*/
+.vContent {
+    width: 40%;
+    float: left;
+    vertical-align: middle;
+    font-size: 15px;
+    height: 45px;
+}
+
+/*二维码小号*/
+.vCodeContent {
+    width: 40%;
+    float: left;
+    vertical-align: middle;
+    font-size: 15px;
+    height: 50px;
+    background: url('../img/bcode.jpg') no-repeat center !important;
+}
+
+/*我的信息右部分*/
+.vRight {
+    float: left;
+    width: 30%;
+    text-align: right;
+    padding-right: 10px;
+    background-color: transparent;
+}
+
+/*我的信息右箭头*/
+.vRightCon {
+    float: left;
+    width: 25%;
+    height: 50px;
+    background: url('../img/toRight.png') no-repeat right !important;
+}
+
+
+/*短信验证码输入框*/
+.messageCode {
+    margin-left: 10px !important;
+    margin-top: 0px !important;
+    color: #9b9b9b !important;
+    width: 70% !important;
+    background: #FFFFFF url('../img/message.png') 8px 14px no-repeat !important;
+    padding-left: 30px !important;
+    height: 45px !important;
+    font-size: 14px !important;
+}
+/*搜索界面输入框背景*/
+.vInputBG {
+    width: 100%;
+    height: 55px;
+    margin-top: 1px;
+    background-color: #d6c9b9;
+    padding-top: 5px;
+}
+/*短信验证界面的重新发送按钮*/
+.btnResendMessage {
+    background-color: #c6f5e8 !important;
+    color: #000 !important;
+    border: 1px solid #1bcba5 !important;
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    width: 75px !important;
+    height: 45px !important;
+    margin-top: 0px !important;
+}
+/*电话输入框*/
+.textPhoneAllWidth {
+    margin-left: 10px !important;
+    margin-top: 0px !important;
+    color: #9b9b9b !important;
+    width: 94% !important;
+    background: #FFFFFF url('../img/phone-sm.png') 8px 14px no-repeat !important;
+    padding-left: 30px !important;
+    font-size: 14px !important;
+    height: 45px !important;
+}
+/*密码输入框*/
+.textPWDAllWidth {
+    margin-left: 10px !important;
+    margin-top: 0px !important;
+    color: #9b9b9b !important;
+    width: 94% !important;
+    background: #FFFFFF url('../img/key.png') 8px 14px no-repeat !important;
+    padding-left: 30px !important;
+    font-size: 14px !important;
+    height: 45px !important;
+}
+/*搜索输入框*/
+.textSearchAllWidth {
+    margin-left: 1px !important;
+    margin-top: 0px !important;
+    color: #9b9b9b !important;
+    width: 70% !important;
+    background: #FFFFFF url('../img/pen.png') 8px 14px no-repeat !important;
+    padding-left: 30px !important;
+    font-size: 14px !important;
+    height: 45px !important;
+}
+/*搜索按钮*/
+.btnSearchCommon {
+    background-color: #c6f5e8 !important;
+    color: #000 !important;
+    border: 1px solid #1bcba5 !important;
+    border-radius: 5px !important;
+    font-size: 14px !important;
+    width: 75px !important;
+    height: 45px !important;
+    margin-top: 0px !important;
+    line-height: 45px !important;
+    padding: 0px !important;
+}
+
+/*文字描述*/
+.textDesc {
+    text-align: left;
+    width: 35%;
+    font-size: 16px;
+    padding-left: 15px;
+}
+
+/*注册页面文字值*/
+.registerUserTextValue {
+    text-align: left;
+    color: #9b9b9b;
+    font-size: 14px;
+}
+/*注册页面年份下拉框样式*/
+.registerUserSelectYears {
+    width: 100% !important;
+    border: 0px !important;
+    margin-top: 5px !important;
+    padding-left: 0px !important;
+    height: 40px !important;
+    font-size: 14px !important;
+}
+/*li通栏下划线*/
+.liBottomLine {
+    border-bottom: 1px solid #ccc !important;
+    padding-left: 15px !important;
+}
+/*li通栏下划线*/
+.divBottomLine {
+    width: 100%;
+    border-bottom: 1px solid #cdd4d3;
+    padding-left: 5px;
+    height: 50px;
+    line-height: 50px;
+}
+/*通用返回按钮*/
+.btnReturnCommon {
+    background: url(../img/left.png) no-repeat left !important;
+    width: 40px !important;
+    height: 20px !important;
+}
+/*协议同意字样*/
+.protoctAgreeText {
+    font-size: 14px;
+}
+/*同意协议按钮*/
+.btnToProtoct {
+    color: #0bb0a2;
+    font-size: 14px;
+}
+/*公司版权*/
+.venusoftcopyright {
+    background: url(../img/venusoftcopyright.png) no-repeat center !important;
+    width: 100% !important;
+    height: 35px !important;
+}
+/*全民校花*/
+.schoolFlower {
+    margin-left: 10px;
+    padding-left: 60px !important;
+    background: url(../img/quanminxiaohua.png) no-repeat left !important;
+}
+/*全民校草*/
+.schoolGrass {
+    margin-left: 10px;
+    padding-left: 60px !important;
+    background: url(../img/quanminxiaocao.png) no-repeat left !important;
+}
+/*可爱老师*/
+.schoolTeacher {
+    margin-left: 10px;
+    padding-left: 60px !important;
+    background: url(../img/keailaoshi.png) no-repeat left !important;
+}
+/*可爱老师*/
+.discoverText {
+    font-weight: bold;
+    text-align: left;
+}
+
+#swipeTops {
+    width: 100% !important;
+    text-align: center !important;
+    height: 180px !important;
+}
+
+#tSwipe {
+    width: 100% !important;
+    text-align: center !important;
+    height: 60% !important;
+    padding-top: 10px !important;
+}
+
+#mySwipe {
+    width: 100% !important;
+    height: 60% !important;
+    padding-top: 20px !important;
+    padding-left: 0px !important;
+    text-align: center !important;
+}
+
+.noborder {
+    border: 0px !important;
+}
+/*我的界面*/
+.divHeader {
+    height: 100px;
+    width: 100%;
+    padding-top: 10px;
+    text-align: center;
+}
+/*头像图片*/
+.imgHeader {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.ulUserInfoEdit{
+    height:300px;
+}
+/*详细信息布局*/
+.leftInfo {
+    width: 30%;
+    float: left;
+    text-align: right;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.rightInfo {
+    width: 70%;
+    float: left;
+    text-align: left;
+    padding-left: 5px;
+}
+.liUserInfoEdit{
+    height:65px; 
+}
+.inputUserInfoEdit{
+    height:38px !important;
+}
